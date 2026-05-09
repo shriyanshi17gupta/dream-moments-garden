@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { FloatingDecor, CursorSparkles } from "@/components/mom/FloatingDecor";
+import { MusicPlayer } from "@/components/mom/MusicPlayer";
+import { Hero } from "@/components/mom/Hero";
+import { Gallery } from "@/components/mom/Gallery";
+import { Quiz } from "@/components/mom/Quiz";
+import { Reasons } from "@/components/mom/Reasons";
+import { OpenWhen } from "@/components/mom/OpenWhen";
+import { Timeline } from "@/components/mom/Timeline";
+import { VoiceNotes } from "@/components/mom/VoiceNotes";
+import { Quotes } from "@/components/mom/Quotes";
+import { ThingsTaught } from "@/components/mom/ThingsTaught";
+import { HiddenSurprise } from "@/components/mom/HiddenSurprise";
+import { Footer } from "@/components/mom/Footer";
+import { useReveal } from "@/components/mom/useReveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  useReveal();
+  return (
+    <main className="relative">
+      <FloatingDecor />
+      <CursorSparkles />
+      <MusicPlayer />
+
+      <Hero />
+      <Gallery />
+      <Quiz />
+      <Reasons />
+      <Timeline />
+      <OpenWhen />
+      <VoiceNotes />
+      <Quotes />
+      <ThingsTaught />
+      <HiddenSurprise />
+      <Footer />
+    </main>
+  );
 }
