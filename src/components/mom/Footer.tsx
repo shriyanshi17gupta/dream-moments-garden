@@ -5,13 +5,13 @@ export function Footer() {
       <div className="mx-auto max-w-3xl reveal">
         <div className="mx-auto h-px w-32 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
         <p className="mt-8 font-script text-3xl md:text-4xl text-gradient-rose">
-          “No matter how old I grow, I'll always be your little girl ❤️”
+          “मैं चाहे जितनी बड़ी हो जाऊँ, हमेशा तेरी छोटी सी बेटी रहूँगी ❤️”
         </p>
         <p className="mt-6 text-foreground/70">
-          Made with all my heart — for the woman who made mine.
+          पूरे दिल से बनाया — उस औरत के लिए जिसने मेरा दिल बनाया।
         </p>
         <p className="mt-2 font-script text-xl text-primary">
-          — Your daughter · Mother's Day {year}
+          — तेरी बेटी · मातृ दिवस {year}
         </p>
         <div className="mt-6 text-2xl">🌸 💗 🌷 ✨ 🦋</div>
       </div>

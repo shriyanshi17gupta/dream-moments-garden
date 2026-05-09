@@ -1,10 +1,10 @@
 import { Mic, Play } from "lucide-react";
 
 const NOTES = [
-  { from: "Me", time: "0:14", text: "Maa... I just wanted to say thank you. For everything." },
-  { from: "Me", time: "0:08", text: "Hi! Just thought of your hugs. Can I have one tonight?" },
-  { from: "Me", time: "0:22", text: "Remember that song you used to hum? It's stuck in my head today." },
-  { from: "Me", time: "0:19", text: "I'm okay, Maa. Don't worry. Eat on time. I love you." },
+  { from: "मैं", time: "0:14", text: "माँ... बस इतना कहना था — हर चीज़ के लिए शुक्रिया।" },
+  { from: "मैं", time: "0:08", text: "हाय! तेरी झप्पी की याद आ गई। आज रात एक मिल जाएगी?" },
+  { from: "मैं", time: "0:22", text: "वो गाना याद है जो तू गुनगुनाती थी? आज दिन भर वही चल रहा है।" },
+  { from: "मैं", time: "0:19", text: "मैं ठीक हूँ, माँ। चिंता मत कर। समय पर खाना खा लेना। आय लव यू।" },
 ];
 
 export function VoiceNotes() {
@@ -12,10 +12,10 @@ export function VoiceNotes() {
     <section className="relative px-4 py-24">
       <div className="mx-auto max-w-3xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">whispers</p>
+          <p className="font-script text-2xl text-primary">कुछ धीमी सी बातें</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">Voice Notes</span>{" "}
-            <span className="font-script">for you</span>
+            <span className="text-gradient-rose">तेरे लिए</span>{" "}
+            <span className="font-script">वॉइस नोट्स</span>
           </h2>
         </div>
 

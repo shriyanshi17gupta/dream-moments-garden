@@ -1,8 +1,8 @@
 const QUOTES = [
-  { q: "Maa, tujhe salaam.", from: "every child, ever" },
-  { q: "Mere paas Maa hai.", from: "Deewar — and me, always" },
+  { q: "माँ, तुझे सलाम।", from: "हर बच्चा, हमेशा" },
+  { q: "मेरे पास माँ है।", from: "दीवार — और मैं, हमेशा" },
   { q: "It's all about loving your parents.", from: "K3G" },
-  { q: "Ek Maa hi hoti hai jo bina kuch kahe sab samajh leti hai.", from: "untold film, told in our home" },
+  { q: "एक माँ ही होती है जो बिना कुछ कहे सब समझ लेती है।", from: "जो फ़िल्म नहीं बनी, पर हमारे घर में हर रोज़ चलती है" },
 ];
 
 export function Quotes() {
@@ -10,10 +10,10 @@ export function Quotes() {
     <section className="relative px-4 py-24">
       <div className="mx-auto max-w-5xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">filmy feelings</p>
+          <p className="font-script text-2xl text-primary">फ़िल्मी जज़्बात</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">Dialogues</span>{" "}
-            <span className="font-script">that taste like Maa</span>
+            <span className="text-gradient-rose">डायलॉग्स</span>{" "}
+            <span className="font-script">जिनमें माँ का स्वाद है</span>
           </h2>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
