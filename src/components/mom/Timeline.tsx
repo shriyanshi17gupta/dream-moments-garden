@@ -1,10 +1,10 @@
 const ITEMS = [
-  { year: "Then", title: "First Heartbeat", text: "You held me for the first time and decided I was your forever." },
-  { year: "Tiny", title: "Lullabies & Lori", text: "Your voice was the first song I ever fell asleep to." },
-  { year: "School Days", title: "Tiffin Box of Love", text: "Cut fruits, hidden notes, extra paratha 'just in case'." },
-  { year: "Teen Era", title: "The Fights, The Hugs", text: "We fought. We cried. We made up over chai. Always chai." },
-  { year: "Now", title: "Best Friends", text: "I tell you everything. Almost. Okay — most things. 😅" },
-  { year: "Forever", title: "Always Yours", text: "No matter how old I grow, I'll always be your little girl." },
+  { year: "तब", title: "पहली धड़कन", text: "तूने मुझे पहली बार गोद में लिया और तय कर लिया कि मैं तेरी हमेशा हूँ।" },
+  { year: "नन्ही उम्र", title: "लोरियाँ", text: "तेरी आवाज़ पहला गीत थी जिस पर मैं सोई।" },
+  { year: "स्कूल के दिन", title: "टिफ़िन में प्यार", text: "कटे हुए फल, छुपे हुए नोट्स, 'ज़रूरत पड़े तो' एक्स्ट्रा पराठा।" },
+  { year: "तीख़ी उम्र", title: "लड़ाइयाँ, फिर झप्पी", text: "लड़े। रोए। चाय पर मान गए। हमेशा चाय पर।" },
+  { year: "अब", title: "बेस्ट फ़्रेंड्स", text: "मैं तुझे सब बताती हूँ। लगभग सब। ठीक है — ज़्यादातर। 😅" },
+  { year: "हमेशा", title: "हमेशा तेरी", text: "मैं चाहे जितनी बड़ी हो जाऊँ, हमेशा तेरी छोटी सी बेटी रहूँगी।" },
 ];
 
 export function Timeline() {
@@ -12,10 +12,10 @@ export function Timeline() {
     <section className="relative px-4 py-24">
       <div className="mx-auto max-w-4xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">our story so far</p>
+          <p className="font-script text-2xl text-primary">अब तक की हमारी कहानी</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">A Little Timeline</span>{" "}
-            <span className="font-script">of us</span>
+            <span className="text-gradient-rose">हमारी यादों का</span>{" "}
+            <span className="font-script">सफ़र</span>
           </h2>
         </div>
 

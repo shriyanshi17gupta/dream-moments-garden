@@ -4,14 +4,14 @@ import { Heart, Sparkles } from "lucide-react";
 type Q = { q: string; options: string[]; answer: number; tag: string };
 
 const QUESTIONS: Q[] = [
-  { tag: "How Well Does Mom Know Me?", q: "What is my favorite food?", options: ["Maggi at midnight 🍜", "Mom's rajma chawal 🍛", "Pani puri 🥟", "Pasta 🍝"], answer: 1 },
-  { tag: "Mother–Daughter Rapid Fire", q: "Who says sorry first after fights?", options: ["You always do, Mom 🥺", "Me, secretly", "Neither — we just hug", "Dad mediates 😅"], answer: 2 },
-  { tag: "Guess The Memory", q: "What was our funniest memory?", options: ["Burning the dosa together", "Dancing in the rain", "Getting lost in the mall", "All of them, Maa 💕"], answer: 3 },
-  { tag: "Who Said This?", q: "Who is more emotional?", options: ["You 💧", "Me 💧💧", "Tie — we cry at ads", "Definitely Dad"], answer: 2 },
-  { tag: "Finish The Sentence", q: "Favorite movie we watched together?", options: ["Kuch Kuch Hota Hai", "K3G", "DDLJ", "All of them on loop ❤️"], answer: 3 },
-  { tag: "Our Favorite Things", q: "My childhood nickname?", options: ["Munni", "Gudiya", "Pari", "Only you remember 💗"], answer: 3 },
-  { tag: "This or That", q: "One thing we both always do together?", options: ["Sip chai at sunset ☕", "Gossip about everyone", "Cry during sad songs", "All of the above 💖"], answer: 3 },
-  { tag: "Memory Timeline Challenge", q: "When did you first call me your best friend?", options: ["The day I was born", "When I turned 10", "Every single day", "Always, just unsaid"], answer: 2 },
+  { tag: "माँ मुझे कितना जानती है?", q: "मेरा सबसे पसंदीदा खाना क्या है?", options: ["आधी रात की मैगी 🍜", "माँ के हाथ का राजमा-चावल 🍛", "पानी पुरी 🥟", "पास्ता 🍝"], answer: 1 },
+  { tag: "रैपिड फायर", q: "लड़ाई के बाद पहले 'सॉरी' कौन कहता है?", options: ["हमेशा तू ही, माँ 🥺", "मैं, चुपके से", "कोई नहीं — बस गले मिल लेते हैं", "पापा बीच-बचाव कर देते हैं 😅"], answer: 2 },
+  { tag: "याद पहचानो", q: "हमारी सबसे मज़ेदार याद कौन सी थी?", options: ["साथ में डोसा जलाना", "बारिश में नाचना", "मॉल में खो जाना", "सब, माँ 💕"], answer: 3 },
+  { tag: "किसने कहा था?", q: "हम दोनों में ज़्यादा भावुक कौन है?", options: ["तू 💧", "मैं 💧💧", "बराबर — विज्ञापन देखकर भी रो देते हैं", "पक्का पापा"], answer: 2 },
+  { tag: "वाक्य पूरा करो", q: "हमारी सबसे पसंदीदा फिल्म जो हमने साथ देखी?", options: ["कुछ कुछ होता है", "कभी ख़ुशी कभी ग़म", "DDLJ", "सारी, बार-बार ❤️"], answer: 3 },
+  { tag: "हमारी पसंद", q: "बचपन में मेरा प्यारा सा नाम क्या था?", options: ["मुन्नी", "गुड़िया", "परी", "बस तू ही जानती है 💗"], answer: 3 },
+  { tag: "ये या वो", q: "एक बात जो हम हमेशा साथ करते हैं?", options: ["शाम की चाय ☕", "सबकी चुगली 🤭", "गाने सुनकर रोना", "ऊपर के सब 💖"], answer: 3 },
+  { tag: "यादों का सफ़र", q: "तूने मुझे पहली बार 'बेस्ट फ्रेंड' कब कहा था?", options: ["जिस दिन मैं पैदा हुई", "जब मैं 10 साल की हुई", "हर रोज़", "हमेशा से, बिन कहे"], answer: 2 },
 ];
 
 function Confetti({ show }: { show: boolean }) {
@@ -73,13 +73,13 @@ export function Quiz() {
       <Confetti show={confetti} />
       <div className="mx-auto max-w-3xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">a little game for us</p>
+          <p className="font-script text-2xl text-primary">हम दोनों के लिए एक छोटा सा खेल</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">How well do we</span>{" "}
-            <span className="font-script">know each other?</span>
+            <span className="text-gradient-rose">हम एक-दूजे को</span>{" "}
+            <span className="font-script">कितना जानते हैं?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-foreground/70">
-            Eight tiny questions, infinite love. Confetti included. 🎀
+            आठ छोटे सवाल, बेहिसाब प्यार। और हाँ — कन्फेटी फ्री में! 🎀
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function Quiz() {
                   {QUESTIONS[i].tag}
                 </span>
                 <span className="font-display tracking-wider text-foreground/60">
-                  {i + 1} / {QUESTIONS.length} · score {score}
+                  {i + 1} / {QUESTIONS.length} · स्कोर {score}
                 </span>
               </div>
 
@@ -128,17 +128,17 @@ export function Quiz() {
             <div className="glass-rose rounded-3xl p-10 text-center animate-pop">
               <Sparkles className="mx-auto size-10 text-primary" />
               <h3 className="mt-3 text-3xl md:text-4xl text-gradient-rose">
-                {score >= QUESTIONS.length - 1 ? "We know each other by heart 💗" : "Some answers can't be scored — only felt 💖"}
+                {score >= QUESTIONS.length - 1 ? "हम एक-दूजे को दिल से जानते हैं 💗" : "कुछ जवाब गिने नहीं जाते — बस महसूस होते हैं 💖"}
               </h3>
               <p className="mt-4 font-script text-2xl text-primary">
-                You got {score} of {QUESTIONS.length}, but Maa — you got all of me, always.
+                {QUESTIONS.length} में से {score} सही, पर माँ — तूने तो मेरा हर पल जिया है।
               </p>
               <p className="mx-auto mt-4 max-w-xl text-foreground/75">
-                Whether you answered them right or not, you've already lived every moment with me.
-                Thank you for being my home, my safe place, my forever.
+                सही हो या ग़लत, फ़र्क नहीं पड़ता। तू मेरा घर है, मेरी पनाह है, मेरा हमेशा है।
+                शुक्रिया, माँ — हर चीज़ के लिए।
               </p>
               <button onClick={reset} className="mt-7 inline-flex items-center gap-2 rounded-full bg-gradient-rose px-6 py-3 text-primary-foreground shadow-dreamy transition hover:scale-105">
-                Play again 💕
+                फिर से खेलें 💕
               </button>
             </div>
           )}

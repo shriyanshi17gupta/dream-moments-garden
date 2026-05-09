@@ -72,11 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "To The Best Mom In The World ❤️ — A Mother's Day Surprise" },
-      { name: "description", content: "A dreamy, handmade Mother's Day scrapbook with photos, love letters, games and memories — for the most wonderful Maa." },
-      { name: "author", content: "For Mom, with love" },
-      { property: "og:title", content: "To The Best Mom In The World ❤️" },
-      { property: "og:description", content: "A dreamy Pinterest-style Mother's Day surprise — photos, games, and love letters for the best Maa in the world." },
+      { title: "दुनिया की सबसे प्यारी माँ के नाम ❤️ — मातृ दिवस सरप्राइज़" },
+      { name: "description", content: "एक सपनीला, हाथ से बना मातृ दिवस स्क्रैपबुक — तस्वीरें, प्रेम पत्र, खेल और यादें, मेरी सबसे ख़ास माँ के लिए।" },
+      { name: "author", content: "माँ के लिए, बेहद प्यार से" },
+      { property: "og:title", content: "दुनिया की सबसे प्यारी माँ के नाम ❤️" },
+      { property: "og:description", content: "Pinterest स्टाइल का सपनीला मातृ दिवस सरप्राइज़ — तस्वीरें, खेल और प्रेम पत्र, दुनिया की सबसे प्यारी माँ के लिए।" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&family=Hind:wght@400;500;600;700&display=swap",
       },
     ],
   }),
@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="hi">
       <head>
         <HeadContent />
       </head>

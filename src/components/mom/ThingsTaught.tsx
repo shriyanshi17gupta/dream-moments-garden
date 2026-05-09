@@ -1,10 +1,10 @@
 const THINGS = [
-  { i: "🌱", t: "How to be kind", d: "Even when the world isn't." },
-  { i: "💪", t: "How to be strong", d: "Quietly, gracefully, fiercely." },
-  { i: "🍳", t: "How to make chai", d: "Three teaspoons of love. Always." },
-  { i: "📿", t: "How to pray", d: "And how to listen for the answer." },
-  { i: "💖", t: "How to forgive", d: "Yourself first. The rest will follow." },
-  { i: "✨", t: "How to dream", d: "Bigger, louder, brighter." },
+  { i: "🌱", t: "दयालु होना", d: "जब दुनिया न हो, तब भी।" },
+  { i: "💪", t: "मज़बूत होना", d: "चुपचाप, शान से, पूरी जान से।" },
+  { i: "🍳", t: "चाय बनाना", d: "तीन चम्मच प्यार। हमेशा।" },
+  { i: "📿", t: "दुआ करना", d: "और जवाब को सुनना भी।" },
+  { i: "💖", t: "माफ़ करना", d: "पहले ख़ुद को। बाक़ी सब फिर हो जाएगा।" },
+  { i: "✨", t: "सपने देखना", d: "बड़े, ऊँचे, चमकदार।" },
 ];
 
 export function ThingsTaught() {
@@ -12,10 +12,10 @@ export function ThingsTaught() {
     <section className="relative px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">your gifts to me</p>
+          <p className="font-script text-2xl text-primary">तेरी दी हुई सीखें</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">Things You</span>{" "}
-            <span className="font-script">Taught Me</span>
+            <span className="text-gradient-rose">जो तूने मुझे</span>{" "}
+            <span className="font-script">सिखाया</span>
           </h2>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

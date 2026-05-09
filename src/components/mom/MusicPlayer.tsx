@@ -47,7 +47,7 @@ export function MusicPlayer() {
           </div>
         </button>
         <div className="flex flex-col">
-          <span className="font-script text-base leading-none text-primary">For Mom</span>
+          <span className="font-script text-base leading-none text-primary">माँ के लिए</span>
           <div className="mt-1 flex items-end gap-0.5">
             {[3, 6, 4, 8, 5, 7, 4].map((h, i) => (
               <span
