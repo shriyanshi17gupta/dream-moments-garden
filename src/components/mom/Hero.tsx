@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import hero from "@/assets/mom/hero.jpeg";
 
 const QUOTES = [
-  "माँ... वो एक लफ़्ज़ जिसमें सारी दुनिया बसती है 💗",
-  "माँ की ममता दिल की धड़कन है, घर का उजाला है।",
-  "तू है तो मैं हूँ — मेरी प्यारी माँ।",
-  "वो धूप है जो साड़ी में लिपटी है ✨",
+  "Mother… a single word that holds an entire world within it 💗",
+  "A mother’s love is the heartbeat of the soul and the light of the home.",
+  "If you exist, I exist — my dearest mother.",
+  "She is sunshine wrapped in a saree ✨",
 ];
-
 export function Hero() {
   const [i, setI] = useState(0);
   const [text, setText] = useState("");
@@ -41,11 +40,11 @@ export function Hero() {
 
       <div className="relative grid w-full max-w-6xl items-center gap-10 md:grid-cols-2">
         <div className="text-center md:text-left">
-          <p className="font-script text-3xl text-primary animate-fade-up">मातृ दिवस मुबारक</p>
+          <p className="font-script text-3xl text-primary animate-fade-up">HAPPY MOTHER'S DAY</p>
           <h1 className="mt-3 text-5xl leading-tight md:text-7xl animate-fade-up" style={{ animationDelay: "0.15s" }}>
-            <span className="text-gradient-rose">दुनिया की सबसे प्यारी</span>
+            <span className="text-gradient-rose">MOST PRECIOUS</span>
             <br />
-            <span className="font-script text-foreground/80">माँ के नाम</span>{" "}
+            <span className="font-script text-foreground/80">MAA</span>{" "}
             <span className="inline-block animate-pulse-soft">❤️</span>
           </h1>
 
@@ -58,11 +57,11 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap justify-center gap-3 md:justify-start">
             <a href="#gallery" className="group inline-flex items-center gap-2 rounded-full bg-gradient-rose px-6 py-3 text-primary-foreground shadow-dreamy transition hover:scale-105">
-              <span>हमारी यादें देखो</span>
+              <span>OUR MEMORIES</span>
               <span className="transition group-hover:translate-x-1">→</span>
             </a>
             <a href="#game" className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-primary transition hover:scale-105">
-              खेल खेलें 🎀
+              PLAY!! 🎀
             </a>
           </div>
         </div>
@@ -70,11 +69,11 @@ export function Hero() {
         <div className="relative animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <div className="absolute -inset-6 rounded-[2rem] bg-gradient-rose opacity-30 blur-2xl animate-shimmer" />
           <div className="relative overflow-hidden rounded-[2rem] glass shadow-dreamy">
-            <img src={hero} alt="माँ और बेटी गुलाबों के बीच एक प्यारे से गले मिलते हुए" width={1536} height={1024} className="aspect-[4/3] w-full object-cover" />
+            <img src={hero} alt="Godi Uthale Na MAA!!" width={1536} height={1024} className="aspect-[4/3] w-full object-cover" />
             <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(180deg, transparent 60%, oklch(0.95 0.06 340 / 0.5))" }} />
           </div>
           <div className="absolute -bottom-4 -right-4 rotate-6 rounded-2xl glass-rose px-4 py-2 font-script text-xl text-primary shadow-soft">
-            हमेशा तेरी, बेटा 💌
+            ALWAYS YOUR DAUGHTER 💌
           </div>
         </div>
       </div>
