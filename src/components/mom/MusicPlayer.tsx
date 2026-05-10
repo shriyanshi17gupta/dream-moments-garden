@@ -3,7 +3,7 @@ import { Play, Pause, Music2 } from "lucide-react";
 
 // Soft instrumental loop (replace with your favorite Bollywood song URL)
 const SONG_URL =
-  "https://cdn.pixabay.com/download/audio/2022/03/15/audio_1718e49d6f.mp3?filename=relaxing-mountains-rivers-streams-running-water-18178.mp3";
+  "https://www.image2url.com/r2/default/audio/1778422754869-2e717b6f-dcce-4854-b212-6c5bcf1469bd.mp3";
 
 export function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -18,7 +18,7 @@ export function MusicPlayer() {
     };
     tryAuto();
     const once = () => {
-      if (!playing) a.play().then(() => setPlaying(true)).catch(() => {});
+      if (!playing) a.play().then(() => setPlaying(true)).catch(() => { });
       window.removeEventListener("click", once);
     };
     window.addEventListener("click", once);
@@ -30,7 +30,7 @@ export function MusicPlayer() {
     const a = audioRef.current;
     if (!a) return;
     if (playing) { a.pause(); setPlaying(false); }
-    else a.play().then(() => setPlaying(true)).catch(() => {});
+    else a.play().then(() => setPlaying(true)).catch(() => { });
   };
 
   return (

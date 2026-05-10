@@ -4,11 +4,11 @@ import { Heart, Sparkles } from "lucide-react";
 type Q = { q: string; options: string[]; answer: number; tag: string };
 
 const QUESTIONS: Q[] = [
-  { tag: "माँ मुझे कितना जानती है?", q: "खुशी का फेवरेट खाना क्या है?", options: ["पानी पुरी 🥟", "मैगी 🍜", "मम्मी के हाथ का पिज़्ज़ा 🍕", "मम्मी के हाथ की भिंडी की सब्ज़ी 💚"], answer: 3 },
-  { tag: "प्यार का नाम", q: "खुशी को मम्मी प्यार से क्या बोलती है?", options: ["परी 🧚‍♀️", "खुशी 🌸", "शोट्टू 🐣", "रानी 👑"], answer: 2 },
-  { tag: "दिल की बात", q: "खुशी को सबसे ज़्यादा क्या पसंद है?", options: ["डांस 💃", "कपड़े 👗", "खाना 🍱", "मम्मी ❤️"], answer: 3 },
-  { tag: "खास दिन", q: "खुशी का बर्थडे कब आता है?", options: ["12 जनवरी 2004 🎂", "17 अगस्त 2006 🎉", "2 सितंबर 2001 🎈", "19 अक्टूबर 2003 🎁"], answer: 1 },
-  { tag: "मम्मी का अंदाज़ 😜", q: "आप खुशी को किससे मारते हो?", options: ["डंडे से 🥢", "इंची-टेप से 📏", "बेलन से 🥖", "जो हाथ में मिल जाए 🤣"], answer: 3 },
+  { tag: "hmmmmm", q: "khushi ka favourite food kya hai?", options: ["pani puri 🥟", "maggi 🍜", "pizza🍕", "aapke haath ki bhindi ki sabzi💚"], answer: 3 },
+  { tag: "btao btaoo", q: "khushi ko mummy pyar se kya bolti hai?", options: ["pari 🧚‍♀️", "khushi 🌸", "shottu 🐣", "rani 👑"], answer: 2 },
+  { tag: "my favourite things", q: "khushi ko sbse jyada kya pasand hai?", options: ["dance 💃", "kapde 👗", "khana 🍱", "mummy(madona) ❤️"], answer: 3 },
+  { tag: "ladke ka toh yaad hi hoga", q: "khushi ka birthday kab aata hai?", options: ["12 jan 2004 🎂", "17 aug 2006 🎉", "2 sept 2001 🎈", "19 oct 2003 🎁"], answer: 1 },
+  { tag: "kuttai toh mandatory hai 😜", q: "aap khushi ko kisse marte ho?", options: ["danda  🥢", "inchy-tap 📏", "jhadu 🥖", "jo haath me mil jaye🤣"], answer: 3 },
 ];
 
 function Confetti({ show }: { show: boolean }) {
@@ -70,13 +70,13 @@ export function Quiz() {
       <Confetti show={confetti} />
       <div className="mx-auto max-w-3xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">हम दोनों के लिए एक छोटा सा खेल</p>
+          <p className="font-script text-2xl text-primary"></p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">हम एक-दूजे को</span>{" "}
-            <span className="font-script">कितना जानते हैं?</span>
+            <span className="text-gradient-rose"></span>{" "}
+            <span className="font-script"></span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-foreground/70">
-            आठ छोटे सवाल, बेहिसाब प्यार। और हाँ — कन्फेटी फ्री में! 🎀
+            🎀
           </p>
         </div>
 
@@ -125,17 +125,16 @@ export function Quiz() {
             <div className="glass-rose rounded-3xl p-10 text-center animate-pop">
               <Sparkles className="mx-auto size-10 text-primary" />
               <h3 className="mt-3 text-3xl md:text-4xl text-gradient-rose">
-                {score >= QUESTIONS.length - 1 ? "हम एक-दूजे को दिल से जानते हैं 💗" : "कुछ जवाब गिने नहीं जाते — बस महसूस होते हैं 💖"}
+                {score >= QUESTIONS.length - 1 ? }
               </h3>
               <p className="mt-4 font-script text-2xl text-primary">
-                {QUESTIONS.length} में से {score} सही, पर माँ — तूने तो मेरा हर पल जिया है।
+                {QUESTIONS.length} me se {score} right!,
               </p>
               <p className="mx-auto mt-4 max-w-xl text-foreground/75">
-                सही हो या ग़लत, फ़र्क नहीं पड़ता। तू मेरा घर है, मेरी पनाह है, मेरा हमेशा है।
-                शुक्रिया, माँ — हर चीज़ के लिए।
+                thank you for everything mumma!!
               </p>
               <button onClick={reset} className="mt-7 inline-flex items-center gap-2 rounded-full bg-gradient-rose px-6 py-3 text-primary-foreground shadow-dreamy transition hover:scale-105">
-                फिर से खेलें 💕
+                play again 💕
               </button>
             </div>
           )}
