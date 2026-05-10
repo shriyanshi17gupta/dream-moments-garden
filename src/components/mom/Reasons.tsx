@@ -1,14 +1,14 @@
 const REASONS = [
-  "तूने मुझसे मिलने से पहले ही मुझसे प्यार किया।",
-  "जब दुनिया शोर करती है, तूने मुझे चुपके से हिम्मत दी।",
-  "तेरी एक झप्पी से मेरा पूरा दिन ठीक हो जाता है।",
-  "तू मुझ पर मुझसे ज़्यादा यकीन करती है।",
-  "मैं कहीं भी रहूँ, तेरी रसोई की महक 'घर' कहलाती है।",
-  "मेरे बेकार जोक्स पर भी तू दिल से हँसती है।",
-  "मेरे माफ़ी माँगने से पहले ही तू माफ़ कर देती है।",
-  "तू आम दिनों को भी त्यौहार बना देती है।",
-  "मैं सोती हूँ, और तेरी दुआएँ जागती हैं।",
-  "तू मेरी पहली दोस्त है, और आख़िरी भी। 💗",
+  "You loved me even before you met me.",
+  "When the world got loud, you quietly gave me strength.",
+  "One hug from you fixes my entire day.",
+  "You believe in me more than I believe in myself.",
+  "No matter where I go, the aroma of your kitchen will always mean 'home.'",
+  "You laugh wholeheartedly even at my terrible jokes.",
+  "You forgive me even before I say sorry.",
+  "You turn ordinary days into celebrations.",
+  "I sleep, while your prayers stay awake for me.",
+  "You are my first friend, and my last too. 💗"
 ];
 
 export function Reasons() {
@@ -16,10 +16,10 @@ export function Reasons() {
     <section className="relative px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">एक अनगिनत सूची</p>
+          <p className="font-script text-2xl text-primary">INFINITE REASONS FOR LOVING YOU</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">मैं तुझसे प्यार</span>{" "}
-            <span className="font-script">क्यों करती हूँ</span>
+            <span className="text-gradient-rose">I LOVE YOU!!</span>{" "}
+            <span className="font-script">UNCONDITIONALLY!!</span>
           </h2>
         </div>
         <ul className="mt-12 grid gap-5 md:grid-cols-2">
