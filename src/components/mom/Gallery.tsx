@@ -6,12 +6,12 @@ import m5 from "@/assets/mom/m5.jpg";
 import m6 from "@/assets/mom/m6.jpeg";
 
 const PHOTOS = [
-  { src: m1, caption: "जंगली फूलों के बीच, हाथों में हाथ डाले 🌷" },
-  { src: m2, caption: "इतवार की महक — कुकीज़ और तू 🍪" },
-  { src: m3, caption: "मेरी हर लट में तूने प्यार गूँथा है" },
-  { src: m4, caption: "तेरी हँसी मेरा सबसे प्यारा गाना है 🦋" },
-  { src: m5, caption: "गुलाब — क्योंकि गुलाबी रंग तुझ पर खूब फबता है" },
-  { src: m6, caption: "हमारा अपना डांस फ्लोर 💃" },
+  { src: m1, caption: "Godi Uthale Na MAA!! 🌷" },
+  { src: m2, caption: "Practice krwane se leke - mere performance ko dekhne ka Excitement🍪" },
+  { src: m3, caption: "Wo lockdown wala Photoshoot every sat/sun" },
+  { src: m4, caption: "same outfit!! MOTHER'S DAY 2023🦋" },
+  { src: m5, caption: "Pov mumma: Me to sirf annar jalaungi" },
+  { src: m6, caption: "THANK YOU!! for always trusting me 💃" },
 ];
 
 export function Gallery() {
@@ -19,13 +19,13 @@ export function Gallery() {
     <section id="gallery" className="relative px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="text-center reveal">
-          <p className="font-script text-2xl text-primary">हमारी यादों का एल्बम</p>
+          <p className="font-script text-2xl text-primary">LOVABLE MEMORIES</p>
           <h2 className="mt-2 text-4xl md:text-6xl">
-            <span className="text-gradient-rose">हमारे ख़ूबसूरत पल</span>{" "}
-            <span className="font-script">साथ-साथ</span>
+            <span className="text-gradient-rose">MOST PRECIOUS MOMENTS</span>{" "}
+            <span className="font-script">SAATH ME</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-foreground/70">
-            हमारी कहानी के कुछ पन्ने — हर कोना प्यार से चिपका हुआ।
+            MOST LOVABLE MOMENTS OF OUR LIFE!!
           </p>
         </div>
 
