@@ -6,11 +6,7 @@ import { Gallery } from "@/components/mom/Gallery";
 import { Quiz } from "@/components/mom/Quiz";
 import { Reasons } from "@/components/mom/Reasons";
 import { OpenWhen } from "@/components/mom/OpenWhen";
-import { Timeline } from "@/components/mom/Timeline";
-import { VoiceNotes } from "@/components/mom/VoiceNotes";
-import { Quotes } from "@/components/mom/Quotes";
 import { ThingsTaught } from "@/components/mom/ThingsTaught";
-import { HiddenSurprise } from "@/components/mom/HiddenSurprise";
 import { Footer } from "@/components/mom/Footer";
 import { useReveal } from "@/components/mom/useReveal";
 
@@ -30,12 +26,8 @@ function Index() {
       <Gallery />
       <Quiz />
       <Reasons />
-      <Timeline />
       <OpenWhen />
-      <VoiceNotes />
-      <Quotes />
       <ThingsTaught />
-      <HiddenSurprise />
       <Footer />
     </main>
   );
