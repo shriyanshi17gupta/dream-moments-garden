@@ -125,7 +125,7 @@ export function Quiz() {
             <div className="glass-rose rounded-3xl p-10 text-center animate-pop">
               <Sparkles className="mx-auto size-10 text-primary" />
               <h3 className="mt-3 text-3xl md:text-4xl text-gradient-rose">
-                {score >= QUESTIONS.length - 1 ? }
+                {score >= QUESTIONS.length - 1 ? "You know her so well! 🥰" : "Good Try! 💖"}
               </h3>
               <p className="mt-4 font-script text-2xl text-primary">
                 {QUESTIONS.length} me se {score} right!,
