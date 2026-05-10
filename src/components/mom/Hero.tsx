@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import hero from "@/assets/mom/hero.jpg";
+import hero from "@/assets/mom/hero.jpeg";
 
 const QUOTES = [
   "माँ... वो एक लफ़्ज़ जिसमें सारी दुनिया बसती है 💗",

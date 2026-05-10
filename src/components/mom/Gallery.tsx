@@ -1,9 +1,9 @@
 import m1 from "@/assets/mom/m1.jpg";
-import m2 from "@/assets/mom/m2.jpg";
-import m3 from "@/assets/mom/m3.jpg";
-import m4 from "@/assets/mom/m4.jpg";
+import m2 from "@/assets/mom/m2.jpeg";
+import m3 from "@/assets/mom/m3.jpeg";
+import m4 from "@/assets/mom/m4.jpeg";
 import m5 from "@/assets/mom/m5.jpg";
-import m6 from "@/assets/mom/m6.jpg";
+import m6 from "@/assets/mom/m6.jpeg";
 
 const PHOTOS = [
   { src: m1, caption: "जंगली फूलों के बीच, हाथों में हाथ डाले 🌷" },
